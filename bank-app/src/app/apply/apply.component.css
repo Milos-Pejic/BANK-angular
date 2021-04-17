@@ -1,0 +1,74 @@
+label{
+    color:#74b9ff;
+    font-size: 1.6rem;
+    display: block;
+    
+}
+.inputlogin{
+    padding: 15px 30px;
+    width: 450px;
+    font-size: 1rem;
+    color:#74b9ff;
+    border: 1px solid #74b9ff;
+    }
+.confirm{
+    color:#74b9ff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: transparent;
+    margin-top: 20px;
+    margin-left: 5px;
+    border: 1px solid #74b9ff;
+    letter-spacing: 1px;
+}
+.confirm:hover{
+    background: #74b9ff;
+    color:white;
+}
+placeholder{
+    color:#74b9ff;
+}
+.logout{
+    color:#74b9ff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: transparent;
+    margin-top: 20px;
+    margin-left: 5px;
+    border: 1px solid #74b9ff;
+    letter-spacing: 1px;
+    margin-left:30px;
+}
+.logout:hover{
+  background: #74b9ff;
+  color:white;
+}
+.credit{
+    
+    border: 1px solid rgb(46, 171, 243);
+    margin: 30px;
+    padding-left: 50px;
+    width: 550px;
+    font-size: 14pt;
+    box-shadow: 3px 3px 3px grey;
+    margin-left: 460px
+  }
+
+  .credit-approved{
+    border: 1px solid #28a745;
+    box-shadow: 3px 3px 3px #28a745;
+  }
+ 
+  
+  .credit-warning{
+    border: 1px solid orange;
+    box-shadow: 3px 3px 3px orange;
+  }
+  
+  .credit-rejected{
+    border: 1px solid #DC143C;
+    box-shadow: 3px 3px 3px #DC143C;
+  }
+

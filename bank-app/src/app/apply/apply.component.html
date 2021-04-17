@@ -1,0 +1,12 @@
+<form [formGroup]="addAmount" (ngSubmit)="amount()">
+    <label>Enter amount</label>
+    <input type="number" name="amount" formControlName="amount" class="inputlogin" placeholder="enter ID here">
+    <button type="submit" class="confirm">Apply</button>
+    <button class="logout" (click)="logOut()">logout</button>
+</form>
+
+<div *ngFor="let item of credits" class="container credit" [ngClass]="getStatusClasses(item)">
+    <div>
+        <p>Amount:{{item.amount}} - {{item.status | status}}</p>
+    </div>
+</div>

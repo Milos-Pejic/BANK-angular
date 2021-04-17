@@ -1,0 +1,5 @@
+<form [formGroup]="addRegister" (ngSubmit)="addUser()">
+    <label>Please register, enter a new ID</label>
+    <input type="text" class="inputlogin" name="personal_id" formControlName="personal_id" placeholder="enter ID here">
+    <button type="submit" class="confirm">Register</button>
+</form>
