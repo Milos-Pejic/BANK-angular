@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { AuthService } from '../auth.service'
+
 import { BankService } from '../bank.service'
 import { Router } from '@angular/router'
+import { AuthService } from '../auth/auth.service';
 @Component({
   selector: 'app-apply',
   templateUrl: './apply.component.html',
@@ -11,9 +12,6 @@ import { Router } from '@angular/router'
 export class ApplyComponent implements OnInit {
   credits: any;
   
-
-  
-
   constructor(private authService: AuthService, private bankService: BankService, private router: Router) { }
 
   ngOnInit(): void {

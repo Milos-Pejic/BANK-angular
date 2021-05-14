@@ -4,7 +4,8 @@ import {HomeComponent} from './home/home.component'
 import {LoginComponent} from './login/login.component'
 import {RegisterComponent} from './register/register.component'
 import {ApplyComponent} from './apply/apply.component'
-import {AuthGuard} from './auth.guard'
+import { AuthGuard } from './auth/auth.guard';
+
 
 const routes: Routes = [{
   component: LoginComponent,

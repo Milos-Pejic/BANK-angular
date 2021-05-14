@@ -8,7 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ApplyComponent } from './apply/apply.component';
 import {HttpClientModule} from '@angular/common/http';
-import { StatusPipe } from './status.pipe'
+import { StatusPipe } from './pipe/status.pipe';
+
 
 @NgModule({
   declarations: [

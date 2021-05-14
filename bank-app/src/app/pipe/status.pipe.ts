@@ -1,30 +1,21 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'status'
+  name: 'status',
 })
 export class StatusPipe implements PipeTransform {
-
   transform(value: any): any {
     switch (value) {
       case 1:
-        return 'Approved'
+        return 'Approved';
         break;
       case 2:
-        return 'Waiting'
+        return 'Waiting';
         break;
       case 3:
-        return 'Rejected'
+        return 'Rejected';
         break;
-
     }
-    return value
-    
-
+    return value;
   }
-
-
-
-
-
 }
