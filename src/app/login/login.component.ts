@@ -25,10 +25,9 @@ export class LoginComponent implements OnInit {
 
   addUser(){
     this.bankService.postLogin(this.addLogin.value).subscribe((res:any)=>{
-      console.log(res)
-      this.authService.setToken(res.token)
-      this.router.navigate(['apply'])
-    })
+      this.authService.setToken(res.token);
+      this.router.navigate(['apply']);
+    });
   }
 
 }

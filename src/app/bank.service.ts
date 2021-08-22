@@ -11,11 +11,10 @@ export class BankService {
   constructor(private http: HttpClient, private authService:AuthService) { }
 
 
-  postRegister(personal_id) {
-    console.log('personal_id')
+  postRegister(personal_id:number) {
   return  this.http.post(`${this.url}/register`,personal_id)
   }
-  postLogin(personal_id){
+  postLogin(personal_id:number){
     return this.http.post(`${this.url}/login`,personal_id)
   }
 

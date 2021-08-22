@@ -16,8 +16,7 @@ export class ApplyComponent implements OnInit {
 
   ngOnInit(): void {
     this.bankService.getCredit().subscribe((res: any) => {
-      console.log(res.result)
-      this.credits = res.result
+      this.credits = res.result;
     })
   }
   addAmount = new FormGroup({
@@ -26,11 +25,9 @@ export class ApplyComponent implements OnInit {
 
   amount() {
     this.bankService.postCredit(this.addAmount.value).subscribe((res: any) => {
-      console.log(res)
-
-      this.addAmount.reset({})
-      this.ngOnInit()
-    })
+      this.addAmount.reset({});
+      this.ngOnInit();
+    });
   }
 
 
